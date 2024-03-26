@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+.ruleBox {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  background-color: #0a5fb9ea;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.8rem;
+  /* opacity: 0.85; */
+  padding: 2%;
+  color: #fef2bf;
+}
+
+.rbtn {
+  margin: 25px;
+  display: inline-block;
+  height: 450px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 30px;
+}
+.rbtn h3 {
+  font-size: medium;
+  line-height: 54px;
+}
+.rbtn h6 {
+  font-size: small;
+  font-style: italic;
+  line-height: 24px;
+}
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  /* margin: 25px; */
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  border-top-right-radius: 50%;
+}
+
+.green {
+  background-color: green;
+  border-top-left-radius: 50%;
+}
+
+.blue {
+  background-color: blue;
+  border-bottom-right-radius: 50%;
+}
+
+.yellow {
+  background-color: yellow;
+  border-bottom-left-radius: 50%;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+@media only screen and (max-width: 1000px) and (min-width: 751px) {
+  .container {
+    margin-right: 40px;
+  }
+  .btn {
+    /* margin: 25px; */
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    border: 10px solid black;
+  }
+}
+/* @media only screen and (max-width: 500px){ */
+/* CSS apply on width between 0 and 500px */
+/* } */
+/* @media only screen and (max-width: 750px) and (min-width: 401px){ */
+/* CSS apply on width between 401px and 750px */
+/* } */
+@media only screen and (max-width: 750px) and (min-width: 451px) {
+  .container {
+    width: 95%;
+    margin-right: 40px;
+  }
+  .btn {
+    height: 150px;
+    width: 150px;
+  }
+  .ruleBox {
+    top: 480px;
+  }
+
+  .rbtn {
+    height: 250px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .ruleBox {
+    top: 450px;
+    left: 10px;
+  }
+
+  .rbtn {
+    margin: 25px;
+    height: 450px;
+    width: 250px;
+  }
+  .container {
+    width: 90%;
+    margin-top: 45px;
+  }
+
+  .btn {
+    height: 110px;
+    width: 110px;
+    border: 7px solid black;
+  }
+}
